@@ -20,7 +20,7 @@ public class CorsConfig {
                 registry.addMapping("/**")
                         .allowedOrigins(
                                 "http://localhost:5173",
-                                "https://hospital-management-system-imsatyam007s-projects.vercel.app"
+                                "https://hospital-management-system-imsatyam007s-projects.vercel.app", "https://hospital-management-system-ebon-nine.vercel.app"
                         )
                         .allowedMethods("*")
                         .allowedHeaders("*");
