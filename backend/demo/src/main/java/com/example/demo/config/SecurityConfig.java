@@ -96,7 +96,13 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of("http://localhost:5173"));
+
+        // Fix: use patterns to allow localhost + all Vercel preview/production URLs
+        config.setAllowedOriginPatterns(List.of(
+            "http://localhost:5173",
+            "https://hospital-management-system-*.vercel.app"
+        ));
+
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(Arrays.asList(
             "Authorization",
