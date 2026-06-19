@@ -67,7 +67,7 @@ return ( <div className="container mt-4"> <h2>Payment History</h2>
               className="btn btn-success btn-sm me-2"
               onClick={() =>
                 window.open(
-                  `http://localhost:8080/api/bills/${payment.billId}/invoice`,
+                  `https://hospital-management-system-y2sv.onrender.com/api/bills/${payment.billId}/invoice`,
                   "_blank"
                 )
               }
@@ -94,3 +94,4 @@ return ( <div className="container mt-4"> <h2>Payment History</h2>
 };
 
 export default PaymentHistory;
+

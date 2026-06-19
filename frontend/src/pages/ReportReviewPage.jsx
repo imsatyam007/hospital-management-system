@@ -75,7 +75,7 @@ function ReportReviewPage() {
 
               <div className="mt-3">
                 <a
-                  href={`http://localhost:8080/uploads/${fileName}`}
+                  href={`https://hospital-management-system-y2sv.onrender.com/uploads/${fileName}`}
                   target="_blank"
                   rel="noreferrer"
                   className="bg-blue-600 text-white px-4 py-2 rounded"

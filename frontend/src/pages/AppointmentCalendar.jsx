@@ -17,7 +17,7 @@ function AppointmentCalendar() {
         const token = localStorage.getItem("token");
 
         const response = await axios.get(
-          "http://localhost:8080/api/appointments",
+          "https://hospital-management-system-y2sv.onrender.com/api/appointments",
           {
             headers: {
               Authorization: `Bearer ${token}`,

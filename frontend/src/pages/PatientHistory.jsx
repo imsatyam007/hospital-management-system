@@ -286,7 +286,7 @@ function PatientHistory() {
                   {f.fileType?.startsWith("image") ? "🖼️" : "📄"} {f.fileName}
                 </span>
                 <a
-                  href={`http://localhost:8080/uploads/${f.fileName}`}
+                  href={`https://hospital-management-system-y2sv.onrender.com/uploads/${f.fileName}`}
                   target="_blank"
                   rel="noreferrer"
                   className="ph-file-link"

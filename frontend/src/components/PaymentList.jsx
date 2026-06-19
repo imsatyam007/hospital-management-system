@@ -47,7 +47,7 @@ function PaymentList({ payments }) {
                 <div className="flex gap-2 justify-center">
     
                     <a
-                        href={`http://localhost:8080/api/bills/${payment.billId}/invoice/view`}
+                        href={`https://hospital-management-system-y2sv.onrender.com/api/bills/${payment.billId}/invoice/view`}
                         target="_blank"
                         rel="noreferrer"
                         className="bg-indigo-500 hover:bg-indigo-600 text-white px-3 py-1 rounded"
@@ -56,7 +56,7 @@ function PaymentList({ payments }) {
                     </a>
 
                     <a
-                    href={`http://localhost:8080/api/bills/${payment.billId}/invoice`}
+                    href={`https://hospital-management-system-y2sv.onrender.com/api/bills/${payment.billId}/invoice`}
                     target="_blank"
                      rel="noreferrer"
                      className="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded"

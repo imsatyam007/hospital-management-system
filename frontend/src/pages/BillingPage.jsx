@@ -193,7 +193,7 @@ useEffect(() => {
 
             <div className="mt-3 flex gap-3">
               <a
-                href={`http://localhost:8080/api/bills/${bill.billId}/invoice`}
+                href={`https://hospital-management-system-y2sv.onrender.com/api/bills/${bill.billId}/invoice`}
                 target="_blank"
                 rel="noreferrer"
                 className="bg-blue-600 text-white px-4 py-2 rounded"
